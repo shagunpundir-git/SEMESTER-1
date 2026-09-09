@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blinkit</title>
+    <style>
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(burlywood, rgb(220, 138, 138));
+}
+.header {
+    background: linear-gradient(lightgreen,plum);
+    color: white;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    margin: 0;
+    font-size: 28px;
+    color: black;
+}
+
+.location {
+    margin: 5px 0;
+}
+
+.search {
+    width: 95%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.banner {
+    background-color: #fff3c4;
+    padding: 20px;
+    text-align: center;
+}
+
+video {
+    display:block;
+    margin: 10px auto;
+    width: 800px;
+}
+
+
+.categories {
+    padding: 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.cat-box {
+    background: linear-gradient(rgb(210, 122, 210) , rgb(75, 86, 188));
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.button{
+background: linear-gradient(white,black);
+color: white;
+font-size: 20px;
+transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+background: linear-gradient(burlywood,red);
+color: white;
+font-size: 20px;
+transition: 0.5s ease-in-out;
+}
+
+.product-list {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    background: linear-gradient( rgb(212, 120, 146) , rgb(81, 156, 101));
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 150px;
+}
+
+.product img {
+    width: 100px;
+}
+
+.productbutton {
+    background-color: #007bff;
+    color: rgb(35, 2, 2);
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+.productbutton:hover{
+background: linear-gradient(purple,yellow);
+color: white;
+font-size: 20px;
+transition: 0.5s ease-in-out;
+}
+.footer {
+  background:linear-gradient(gray,pink);
+  color: white;
+  padding: 40px 20px 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col a {
+  display: block;
+  color: #e5ffe9;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-col a:hover {
+  text-decoration: underline;
+}
+
+.app-btn {
+  width: 140px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+    color:black;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+    </style>
+</head>
+<body>
+   
+    <header class="header">
+ <div>
+    <video autoplay muted loop controls width="100%">
+<source src="ad.mp4" type="video/mp4">
+</video>
+</div>
+        <h2 class="location">Delivery in 10 minutes • Delhi</h2>
+        <input type="text" placeholder="Search for products" class="search">
+    </header>
+
+    <div class="banner">
+       </div>
+
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="category-grid">
+            <div class="cat-box">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png"
+                height="350" width="300">
+            </div>
+            <div class="cat-box">
+                <image src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png"
+                height="350" width="300"></image>
+            </div>
+            <div class="cat-box">
+                <image src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png"
+                height="350" width="300"></image>
+            </div>
+            <div class="cat-box">
+                <image src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png"
+                height="350" width="300"></image>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Popular Products</h2>
+
+        <div class="product-list">
+            <div class="product">
+                <img src="https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/articles/health_tools/healing_foods_slideshow/1800ss_getty_rf_apples.jpg?resize=750px:*&output-quality=75">
+                <h3>Apple</h3>
+                <button class = "button">Add ₹120 / kg</button class = "button">
+            </div>
+
+            <div class="product">
+                <img align="center" src ="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/5734b087-3ad9-485f-bbe2-52079cd9e35d.png">
+                <h3>Milk</h3>
+                <button class = "button">Add ₹55 / litre</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://www.quickpantry.in/cdn/shop/products/lay-s-sizzling-hot-potato-chips-31-g-quick-pantry.jpg?v=1710539205">
+                <h3>Chips</h3>
+                <button class = "button">Add ₹30</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=360/da/cms-assets/cms/product/1bbbf2ad-3cfe-48d6-8bd0-5827d124f9be.png">
+                <h3>Kwality Walls Magnum Almond Ice Cream Stick</h3>
+                <button class = "button">Add ₹80</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src ="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/e930270b-df49-4547-98fb-7a1e7d9eb35a.png">
+                <h3>Cadbury Dairy Milk Silk Oreo Milk Chocolate</h3>
+                <button class = "button">Add ₹95</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/d5f7ceab-6878-4f03-ae42-f3b5c8dc3837.png">
+                <h3>Sulphurless sugar</h3>
+                <button class = "button">Add ₹150</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src ="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/03977b367ad143a4b03ae82fe5b31294.png">
+                <h3>Fortune Soya Health Refined Soyabean Oil</h3>
+                <button class = "button">Add ₹135</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/37e11f8d-623d-4b54-a0c7-c3e6461dd97f.png">
+                <h3>Bingo Mad Angles Achaari Masti Crisps</h3>
+                <button class = "button">Add ₹90</button class = "button">
+            </div>
+        </div>
+
+         <h2>Sweet and Snacks</h2>
+        <div class="product-list">
+           
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/39425fe0-8100-4ec3-950f-f2b75995ed09.png">
+                <h3>Kinder joy</h3>
+                <button class = "button">Add ₹55</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/29ac4eef-054e-468c-bc4c-24028250e239.png">
+                <h3>Maggi Nutrilicious Masala Veg Atta Noodles</h3>
+                <button class = "button">Add ₹75</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/f95eec2d-1d66-49c6-b032-6a4a7c1f90a3.png">
+                <h3>Mother Dairy Choco Brownie Fudge Ice Cream Tub</h3>
+                <button class = "button">Add ₹128</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/2c0a573b-e268-44c6-a9cf-c8c40893d50a.png">
+                <h3>Get-A-Way Death By Chocolate Cake Jar</h3>
+                <button class = "button">Add ₹180</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=540/da/cms-assets/cms/product/0f4e7cd7-d45e-49af-9898-879eba4472b4.png">
+                <h3>Coca-Cola Zero Sugar Soft Drink</h3>
+                <button class = "button">Add ₹75</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/ff4a3ece-1ddf-4860-b293-c2c22c768bb6.png">
+                <h3>Real Fruit Power Mixed Fruit Juice</h3>
+                <button class = "button">Add ₹120</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/faa35e42-baf9-47a2-8215-4c814a4dd7e9.png">
+                <h3>Ferrero Rocher Chocolate Gift Pack (24 pieces)</h3>
+                <button class = "button">Add ₹840</button class = "button">
+            </div>
+
+            <div class="product">
+                <img  align="center" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/56f31dee-0ec6-4b2a-95f3-5ea6b19fd47d.png">
+                <h3>Coca-Cola Vanilla Soft Drink (Zero Sugar)</h3>
+                <button class = "button">Add ₹140</button class = "button">
+            </div>
+        </div>
+
+         <h2>Skin and Hair care</h2>
+        <div class="product-list">
+           
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/34984da6-67eb-4ef7-a95f-80878c37473c.png">
+                <h3>Bella Vita Organic Luxury Perfume Perfume Gift Set</h3>
+                <button class = "button">Add ₹150</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/646d01ee-342d-4dc0-9109-59b060fa70a6.png">
+                <h3>Pears Pure & Gentle Soap</h3>
+                <button class = "button">Add ₹175</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/45e88edf-81e9-43c6-ab64-2b70af13ad06.png">
+                <h3>Dot & Key Barrier Repair + Hydrating Gentle Face Wash</h3>
+                <button class = "button">Add ₹420</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/ae6e9359-0cdf-4644-8c59-e4439bcac8e0.png">
+                <h3>WishCare Fluid Sunscreen - Niacinamide Oil Balance (SPF 50 PA++++)</h3>
+                <button class = "button">Add ₹450</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/27484868-5f02-4b72-a763-afd3bb078de3.png">
+                <h3>Nivea Whitening Smooth Skin Deodorant Roll on</h3>
+                <button class = "button">Add ₹220</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/cb69f2e7-f400-4458-848c-f58039646d0a.png">
+                <h3>Dot & Key Vitamin C + E Super Bright Moisturizing Cream</h3>
+                <button class = "button">Add ₹451</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/1d27172c-1d34-42b6-9a22-25f841550379.png">
+                <h3>MCaffeine Naked & Raw Coffee Body Scrub</h3>
+                <button class = "button">Add ₹238</button class = "button">
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=450/da/cms-assets/cms/product/6ff309ec-45a0-4dda-88ab-888a92bfad1e.png">
+                <h3>Tresemme Keratin Smooth Shampoo</h3>
+                <button class = "button">Add ₹670</button class = "button">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <hr>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Blog</a>
+      <a href="#">Press</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="#">Payments</a>
+      <a href="#">Shipping</a>
+      <a href="#">Cancellation</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Policy</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+      <a href="#">Return Policy</a>
+    </div>
+    <div class="footer-col">
+      <h4>Download App</h4>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="app-btn">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="app-btn">
+    </div>
+
+  </div>
+ <div class="footer-bottom">
+  <b>Blinkit Clone : All rights reserved.</b>
+  </div>
+  <hr>
+</footer>
+  <div>
+  <div class="footer-bottom">
+    <ul>
+      <li> Name : Shagun Pundir </li>
+      <li>Admission no. 2025B01010890</li>
+    </ul>
+  </div>
+
+</body>
+</html>
